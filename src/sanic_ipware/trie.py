@@ -2,7 +2,7 @@ import re
 
 
 # took from https://gist.github.com/EricDuminil/8faabc2f3de82b24e5a371b6dc0fd1e0
-class Trie():  # noqa
+class Trie:  # noqa
     """Regexp::Trie in python. Creates a Trie out of a list of words. The trie
     can be exported to a Regexp pattern. The corresponding Regexp should match
     much faster than a simple Regexp union."""
@@ -15,7 +15,7 @@ class Trie():  # noqa
         for char in word:
             ref[char] = char in ref and ref[char] or {}
             ref = ref[char]
-        ref[''] = 1
+        ref[""] = 1
 
     def dump(self):
         return self.data
@@ -46,7 +46,7 @@ class Trie():  # noqa
             if len(cc) == 1:
                 alt.append(cc[0])
             else:
-                alt.append('[' + ''.join(cc) + ']')
+                alt.append("[" + "".join(cc) + "]")
 
         if len(alt) == 1:
             result = alt[0]

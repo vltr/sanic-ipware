@@ -52,11 +52,7 @@ setup(
         # 'Programming Language :: Python :: Implementation :: PyPy',
         "Topic :: Utilities",
     ],
-    keywords=[
-        "sanic",
-        "request",
-        "ip",
-    ],
+    keywords=["sanic", "request", "ip"],
     install_requires=[],
     extras_require={
         # eg:

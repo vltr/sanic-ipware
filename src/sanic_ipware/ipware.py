@@ -6,10 +6,12 @@ from . import utils as util
 
 def get_client_ip(
     request: object,
-    proxy_order: str='left-most',
-    proxy_count: int=None,
-    proxy_trusted_ips: t.List[str]=None,
-    request_header_order: t.Optional[t.Union[t.List[str], t.Tuple[str]]]=None,
+    proxy_order: str = "left-most",
+    proxy_count: int = None,
+    proxy_trusted_ips: t.List[str] = None,
+    request_header_order: t.Optional[
+        t.Union[t.List[str], t.Tuple[str]]
+    ] = None,
 ) -> t.Tuple[t.Optional[str], bool]:
     client_ip = None
     routable = False
@@ -44,7 +46,7 @@ def get_client_ip(
                 # we are expecting requests via at least one trusted proxy
                 continue
 
-            if proxy_order == 'right-most' and ip_count > 1:
+            if proxy_order == "right-most" and ip_count > 1:
                 # we are expecting requests via proxies to be custom as per
                 # `<proxy2>, <proxy1>, <client>`
                 ips.reverse()
@@ -56,7 +58,9 @@ def get_client_ip(
                         if client_ip and routable:
                             return client_ip, routable
             else:
-                client_ip, routable = util.get_ip_info(util.get_best_ip(client_ip, ips[0]))
+                client_ip, routable = util.get_ip_info(
+                    util.get_best_ip(client_ip, ips[0])
+                )
                 if client_ip and routable:
                     return client_ip, routable
 

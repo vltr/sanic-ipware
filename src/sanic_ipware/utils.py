@@ -14,7 +14,7 @@ def is_valid_ipv4(ip_str):
             socket.inet_aton(ip_str)
         except (AttributeError, socket.error):
             return False
-        return ip_str.count('.') == 3
+        return ip_str.count(".") == 3
     except socket.error:
         return False
     return True
@@ -44,7 +44,9 @@ def is_private_ip(ip_str):
     """
     if defs.IPWARE_IPV4_REGEX.match(ip_str) is not None:
         return True
-    return ip_str.startswith(defs.IPWARE_PRIVATE_IPV6_PREFIX + defs.IPWARE_LOOPBACK_PREFIX)
+    return ip_str.startswith(
+        defs.IPWARE_PRIVATE_IPV6_PREFIX + defs.IPWARE_LOOPBACK_PREFIX
+    )
 
 
 def is_public_ip(ip_str):
@@ -66,8 +68,8 @@ def get_request_header(request, header):
     Given a header, it returns a cleaned up version of the value from
     request.headers, or None
     """
-    value = request.headers.get(header, '').strip()
-    if value == '':
+    value = request.headers.get(header, "").strip()
+    if value == "":
         return None
     return value
 
@@ -78,7 +80,7 @@ def get_ips_from_string(ip_str):
     """
     ip_list = []
 
-    for ip in ip_str.split(','):
+    for ip in ip_str.split(","):
         clean_ip = ip.strip().lower()
         if clean_ip:
             ip_list.append(clean_ip)
