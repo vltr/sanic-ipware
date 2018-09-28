@@ -43,7 +43,7 @@ How to install
 
 The best way to install ``sanic-ipware`` would be using ``pip``:
 
-    pip install sanic_ipware
+    pip install sanic-ipware
 
 How to use
 ----------

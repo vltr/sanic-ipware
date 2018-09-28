@@ -18,7 +18,7 @@ def read(*names, **kwargs):
 
 
 setup(
-    name="sanic_ipware",
+    name="sanic-ipware",
     version="0.1.0",
     license="MIT license",
     description="Retrieve your client's IP address (or try its best to)",
@@ -31,7 +31,7 @@ setup(
     ),
     author="Richard Kuesters",
     author_email="rkuesters@gmail.com",
-    url="https://github.com/vltr/sanic_ipware",
+    url="https://github.com/vltr/sanic-ipware",
     packages=find_packages("src"),
     package_dir={"": "src"},
     py_modules=[splitext(basename(path))[0] for path in glob("src/*.py")],
