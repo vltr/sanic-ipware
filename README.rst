@@ -43,6 +43,8 @@ How to install
 
 The best way to install ``sanic-ipware`` would be using ``pip``:
 
+.. code-block::
+
     pip install sanic-ipware
 
 How to use
