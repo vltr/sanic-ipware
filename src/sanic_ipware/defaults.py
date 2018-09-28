@@ -30,37 +30,133 @@ IPWARE_META_PRECEDENCE_ORDER = (
 IPWARE_PRIVATE_IPV4_PREFIX = (
     '0.',  # messages to software
     '10.',  # class A private block
-    '100.64.', '100.65.', '100.66.', '100.67.', '100.68.', '100.69.',
-    '100.70.', '100.71.', '100.72.', '100.73.', '100.74.', '100.75.',
-    '100.76.', '100.77.', '100.78.', '100.79.', '100.80.', '100.81.',
-    '100.82.', '100.83.', '100.84.', '100.85.', '100.86.', '100.87.',
-    '100.88.', '100.89.', '100.90.', '100.91.', '100.92.', '100.93.',
-    '100.94.', '100.95.', '100.96.', '100.97.', '100.98.', '100.99.',
-    '100.100.', '100.101.', '100.102.', '100.103.', '100.104.', '100.105.',
-    '100.106.', '100.107.', '100.108.', '100.109.', '100.110.', '100.111.',
-    '100.112.', '100.113.', '100.114.', '100.115.', '100.116.', '100.117.',
-    '100.118.', '100.119.', '100.120.', '100.121.', '100.122.', '100.123.',
-    '100.124.', '100.125.', '100.126.', '100.127.',  # carrier-grade NAT
+    '100.64.',  # carrier-grade NAT
+    '100.65.',  # carrier-grade NAT
+    '100.66.',  # carrier-grade NAT
+    '100.67.',  # carrier-grade NAT
+    '100.68.',  # carrier-grade NAT
+    '100.69.',  # carrier-grade NAT
+    '100.70.',  # carrier-grade NAT
+    '100.71.',  # carrier-grade NAT
+    '100.72.',  # carrier-grade NAT
+    '100.73.',  # carrier-grade NAT
+    '100.74.',  # carrier-grade NAT
+    '100.75.',  # carrier-grade NAT
+    '100.76.',  # carrier-grade NAT
+    '100.77.',  # carrier-grade NAT
+    '100.78.',  # carrier-grade NAT
+    '100.79.',  # carrier-grade NAT
+    '100.80.',  # carrier-grade NAT
+    '100.81.',  # carrier-grade NAT
+    '100.82.',  # carrier-grade NAT
+    '100.83.',  # carrier-grade NAT
+    '100.84.',  # carrier-grade NAT
+    '100.85.',  # carrier-grade NAT
+    '100.86.',  # carrier-grade NAT
+    '100.87.',  # carrier-grade NAT
+    '100.88.',  # carrier-grade NAT
+    '100.89.',  # carrier-grade NAT
+    '100.90.',  # carrier-grade NAT
+    '100.91.',  # carrier-grade NAT
+    '100.92.',  # carrier-grade NAT
+    '100.93.',  # carrier-grade NAT
+    '100.94.',  # carrier-grade NAT
+    '100.95.',  # carrier-grade NAT
+    '100.96.',  # carrier-grade NAT
+    '100.97.',  # carrier-grade NAT
+    '100.98.',  # carrier-grade NAT
+    '100.99.',  # carrier-grade NAT
+    '100.100.',  # carrier-grade NAT
+    '100.101.',  # carrier-grade NAT
+    '100.102.',  # carrier-grade NAT
+    '100.103.',  # carrier-grade NAT
+    '100.104.',  # carrier-grade NAT
+    '100.105.',  # carrier-grade NAT
+    '100.106.',  # carrier-grade NAT
+    '100.107.',  # carrier-grade NAT
+    '100.108.',  # carrier-grade NAT
+    '100.109.',  # carrier-grade NAT
+    '100.110.',  # carrier-grade NAT
+    '100.111.',  # carrier-grade NAT
+    '100.112.',  # carrier-grade NAT
+    '100.113.',  # carrier-grade NAT
+    '100.114.',  # carrier-grade NAT
+    '100.115.',  # carrier-grade NAT
+    '100.116.',  # carrier-grade NAT
+    '100.117.',  # carrier-grade NAT
+    '100.118.',  # carrier-grade NAT
+    '100.119.',  # carrier-grade NAT
+    '100.120.',  # carrier-grade NAT
+    '100.121.',  # carrier-grade NAT
+    '100.122.',  # carrier-grade NAT
+    '100.123.',  # carrier-grade NAT
+    '100.124.',  # carrier-grade NAT
+    '100.125.',  # carrier-grade NAT
+    '100.126.',  # carrier-grade NAT
+    '100.127.',  # carrier-grade NAT
     '169.254.',  # link-local block
-    '172.16.', '172.17.', '172.18.', '172.19.',
-    '172.20.', '172.21.', '172.22.', '172.23.',
-    '172.24.', '172.25.', '172.26.', '172.27.',
-    '172.28.', '172.29.', '172.30.', '172.31.',  # class B private blocks
+    '172.16.',  # class B private blocks
+    '172.17.',  # class B private blocks
+    '172.18.',  # class B private blocks
+    '172.19.',  # class B private blocks
+    '172.20.',  # class B private blocks
+    '172.21.',  # class B private blocks
+    '172.22.',  # class B private blocks
+    '172.23.',  # class B private blocks
+    '172.24.',  # class B private blocks
+    '172.25.',  # class B private blocks
+    '172.26.',  # class B private blocks
+    '172.27.',  # class B private blocks
+    '172.28.',  # class B private blocks
+    '172.29.',  # class B private blocks
+    '172.30.',  # class B private blocks
+    '172.31.',  # class B private blocks
     '192.0.0.',  # reserved for IANA special purpose address registry
     '192.0.2.',  # reserved for documentation and example code
     '192.168.',  # class C private block
-    '198.18.', '198.19.',  # reserved for inter-network communications between two separate subnets
+    '198.18.',  # reserved for inter-network communications between two separate subnets
+    '198.19.',  # reserved for inter-network communications between two separate subnets
     '198.51.100.',  # reserved for documentation and example code
     '203.0.113.',  # reserved for documentation and example code
-    '224.', '225.', '226.', '227.', '228.', '229.', '230.', '231.', '232.',
-    '233.', '234.', '235.', '236.', '237.', '238.', '239.',  # multicast
-    '240.', '241.', '242.', '243.', '244.', '245.', '246.', '247.', '248.',
-    '249.', '250.', '251.', '252.', '253.', '254.', '255.',  # reserved
+    '224.',  # multicast
+    '225.',  # multicast
+    '226.',  # multicast
+    '227.',  # multicast
+    '228.',  # multicast
+    '229.',  # multicast
+    '230.',  # multicast
+    '231.',  # multicast
+    '232.',  # multicast
+    '233.',  # multicast
+    '234.',  # multicast
+    '235.',  # multicast
+    '236.',  # multicast
+    '237.',  # multicast
+    '238.',  # multicast
+    '239.',  # multicast
+    '240.',  # reserved
+    '241.',  # reserved
+    '242.',  # reserved
+    '243.',  # reserved
+    '244.',  # reserved
+    '245.',  # reserved
+    '246.',  # reserved
+    '247.',  # reserved
+    '248.',  # reserved
+    '249.',  # reserved
+    '250.',  # reserved
+    '251.',  # reserved
+    '252.',  # reserved
+    '253.',  # reserved
+    '254.',  # reserved
+    '255.',  # reserved
 )
 
 IPWARE_PRIVATE_IPV6_PREFIX = (
     '::',  # Unspecified address
-    '::ffff:', '2001:10:', '2001:20:'  # messages to software
+    '::ffff:',  # messages to software
+    '2001:10:',  # messages to software
+    '2001:20:',  # messages to software
     '2001::',  # TEREDO
     '2001:2::',  # benchmarking
     '2001:db8:',  # reserved for documentation and example code
