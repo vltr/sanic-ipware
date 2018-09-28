@@ -1,0 +1,17 @@
+[paths]
+source =
+  src/sanic_ipware
+  */site-packages/sanic_ipware
+
+[run]
+branch = true
+source =
+  sanic_ipware
+  tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+exclude_lines =
+  noqa
