@@ -6,7 +6,7 @@ help:
 .PHONY: help
 
 black:
-	black ./src/middle_schema/ ./tests setup.py
+	black ./src/sanic_ipware/ ./tests setup.py
 
 cleanpycache:
 	find . -type d | grep "__pycache__" | xargs rm -rf
